@@ -5,7 +5,7 @@
   "scripts": {
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "prepare": "git config core.hooksPath .githook",
+    "prepare": "[ -d .git ] && git config core.hooksPath .githook",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
     "start": "react-scripts start",
     "test": "react-scripts test"
